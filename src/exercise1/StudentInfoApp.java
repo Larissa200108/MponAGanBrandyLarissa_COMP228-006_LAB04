@@ -17,7 +17,7 @@ public class StudentInfoApp extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Student Information Form");
 
-        // Layout
+        // The Layout
         GridPane grid = new GridPane();
         grid.setPadding(new Insets(10, 10, 10, 10));
         grid.setVgap(10);
