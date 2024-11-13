@@ -124,9 +124,9 @@ public class StudentInfoApp extends Application {
                     .append("Courses: ").append(String.join(", ", courseList.getItems())).append("\n")
                     .append("Activities: ");
 
-            if (codingCheck.isSelected()) info.append("Coding ");
-            if (sportCheck.isSelected()) info.append("Sport ");
-            if (musicCheck.isSelected()) info.append("Music ");
+            if (codingCheck.isSelected()) info.append("[Coding] ");
+            if (sportCheck.isSelected()) info.append("[Sport] ");
+            if (musicCheck.isSelected()) info.append("[Music] ");
 
             resultArea.setText(info.toString());
         });
