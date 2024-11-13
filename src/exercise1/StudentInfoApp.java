@@ -23,7 +23,7 @@ public class StudentInfoApp extends Application {
         grid.setVgap(10);
         grid.setHgap(10);
 
-        // The text fields for personal details
+        // text fields for personal details
         TextField nameField = new TextField();
         nameField.setPromptText("Full Name");
         TextField addressField = new TextField();
