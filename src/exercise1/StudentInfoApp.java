@@ -97,10 +97,10 @@ public class StudentInfoApp extends Application {
         grid.add(courseList, 1, 9);
 
         // Checkboxes for additional activities using FlowPane
-        CheckBox sportsCheck = new CheckBox("Coding");
-        CheckBox musicCheck = new CheckBox("Sport");
-        CheckBox artCheck = new CheckBox("Music");
-        FlowPane activitiesFlowPane = new FlowPane(10, 10, sportsCheck, musicCheck, artCheck);
+        CheckBox codingCheck = new CheckBox("Coding");
+        CheckBox sportCheck = new CheckBox("Sport");
+        CheckBox musicCheck = new CheckBox("Music");
+        FlowPane activitiesFlowPane = new FlowPane(10, 10, codingCheck, sportCheck, musicCheck);
         grid.add(new Label("Activities:"), 0, 10);
         grid.add(activitiesFlowPane, 1, 10);
 
@@ -124,9 +124,9 @@ public class StudentInfoApp extends Application {
                     .append("Courses: ").append(String.join(", ", courseList.getItems())).append("\n")
                     .append("Activities: ");
 
-            if (sportsCheck.isSelected()) info.append("Coding ");
-            if (musicCheck.isSelected()) info.append("Sport ");
-            if (artCheck.isSelected()) info.append("Music ");
+            if (codingCheck.isSelected()) info.append("Coding ");
+            if (sportCheck.isSelected()) info.append("Sport ");
+            if (musicCheck.isSelected()) info.append("Music ");
 
             resultArea.setText(info.toString());
         });
