@@ -39,7 +39,7 @@ public class StudentInfoApp extends Application {
         TextField emailField = new TextField();
         emailField.setPromptText("Email");
 
-        // Adding fields to grid
+        // Add fields to grid
         grid.add(new Label("Full Name:"), 0, 0);
         grid.add(nameField, 1, 0);
         grid.add(new Label("Address:"), 0, 1);
